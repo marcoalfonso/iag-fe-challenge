@@ -1,0 +1,6 @@
+.lockerContainer {
+  min-height: 400px;
+  margin: 50px 50px;
+  padding: 50px;
+  border: 1px solid black;
+}
