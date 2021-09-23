@@ -11,20 +11,37 @@
  */
 
 import {
-  SENDING_REQUEST
-} from '../constants/constants'
+  SET_INPUT,
+  SET_PIN,
+  SET_LOCKED
+} from 'constants/constants'
 
 // The initial application state
 const initialState = {
-  loading: false
+  loading: false,
+  input: '',
+  PIN: '',
+  isLocked: false
 }
 
 const appReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SENDING_REQUEST:
+    case SET_INPUT:
       return {
         ...state,
-        loading: action.loading
+        input: action.value
+      }
+
+    case SET_PIN:
+      return {
+        ...state,
+        PIN: action.PIN
+      }
+
+    case SET_LOCKED:
+      return {
+        ...state,
+        isLocked: action.boolean
       }
 
     default:

@@ -8,4 +8,7 @@
  */
 
 /* App Constants */
-export const SENDING_REQUEST = 'SENDING_REQUEST'
+export const KEYS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'CLR', '0', 'ENTER']
+export const SET_INPUT = 'SET_INPUT'
+export const SET_PIN = 'SET_PIN'
+export const SET_LOCKED = 'SET_LOCKED'

@@ -1,0 +1,22 @@
+.keysContainer {
+  flex-basis: 40%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 0.4rem;
+  background-color: #666666;
+  border: 4px solid black;
+  padding: 15px;
+  min-height: 250px;
+}
+
+.key {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #000000;
+}
