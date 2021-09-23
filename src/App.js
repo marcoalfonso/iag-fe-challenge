@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { withRouter, Link } from 'react-router-dom'
-import { connect } from 'react-redux'
 import { ToastContainer } from 'react-toastify'
 import Routes from './Routes'
 
@@ -25,10 +24,4 @@ export class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-})
-
-const mapDispatchToProps = dispatch => ({
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(App));
+export default withRouter(App)
